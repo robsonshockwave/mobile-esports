@@ -13,7 +13,7 @@ export interface DuoCardProps {
   hourStart: string;
   id: string;
   useVoiceChannel: boolean;
-  WeekDays: string[];
+  weekDays: string[];
   yearsPlaying: number;
 }
 
@@ -31,7 +31,7 @@ export function DuoCard({ data, onConnect }: Props) {
 
       <DuoInfo
         label="Disponibilidade"
-        value={`${data.WeekDays.length} dias \u2022 ${data.hourStart} - ${data.hourEnd}`}
+        value={`${data.weekDays.length} dias \u2022 ${data.hourStart} - ${data.hourEnd}`}
       />
 
       <DuoInfo
